@@ -1,75 +1,43 @@
-# React + TypeScript + Vite
+# 🔷 Persona 3 Reload — Stylized Portfolio Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, fully responsive personal portfolio web application built with **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Inspired by the modern JRPG menu HUD, liquid color aesthetics, and dynamic UI systems of *Persona 3 Reload*.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+* **Authentic P3R Aesthetic**: Dynamic angled menu navigation, stylized typography, high-contrast cyan/magenta color palette, and custom hardware UI components (including a Sony NW-S200 style MP3 player).
+* **Cinematic Video Background**: Seamlessly integrated, lightweight background video loop with customized canvas overlays and CSS blend modes.
+* **Persistent Audio System**: Built-in background soundtrack player with track switching, playback controls, and persistent state across menu tabs.
+* **Fully Responsive**: Mobile-optimized layout with horizontal touch-scrolling menu tabs, adaptive text scaling, and panel reflows.
+* **Dynamic Data-Driven Panels**:
+  * **About Me**: Character bio, education, and role details.
+  * **Personality**: Visual progress-bar system parameters.
+  * **Projects**: Interactive cards with tech stacks and live external links (`[LAUNCH ↗]`).
+  * **Game Archive**: Interactive game logs featuring titles like *Valorant* and *Marvel Rivals*.
+  * **Music Corner**: Custom MP3 player interface and favorite artist showcase.
+  * **Milestones & Socials**: Direct links to GitHub, Instagram, and key career milestones.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Framework**: React 18 + Vite
+* **Language**: TypeScript
+* **Styling**: Tailwind CSS
+* **Animations**: Framer Motion
+* **Deployment**: Vercel CLI
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. **Clone the repository** (or download the source code):
+   ```bash
+   git clone [https://github.com/vexilen-01/persona-interface.git](https://github.com/vexilen-01/persona-interface.git)
+   cd persona-interface
